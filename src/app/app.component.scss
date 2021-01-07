@@ -14,10 +14,26 @@
   justify-content: center;
   align-items: center;
   margin: 1em 0;
-  padding: 0;
 }
+
 .logo {
-  width: 30em;
-  height: 3em;
-  margin: 0;
+  height: 3rem;
+}
+
+@media only screen and (max-width: 60em) {
+  .logo {
+    height: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .logo {
+    height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .logo {
+    height: 1.5rem;
+  }
 }

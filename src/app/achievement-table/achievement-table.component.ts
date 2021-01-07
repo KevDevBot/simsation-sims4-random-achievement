@@ -3,6 +3,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { AchievementData, ACHIEVEMENTS } from '../achievements';
 import { Sort } from '@angular/material/sort';
 import { AchievementService } from '../achievement.service';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-achievement-table',
@@ -10,7 +11,23 @@ import { AchievementService } from '../achievement.service';
   styleUrls: ['./achievement-table.component.scss'],
 })
 export class AchievementTableComponent implements OnInit, OnDestroy {
-  constructor(public achievementService: AchievementService) {}
+  constructor(
+    breakpointObserver: BreakpointObserver,
+    public achievementService: AchievementService
+  ) {
+    breakpointObserver.observe([Breakpoints.Handset]).subscribe((result) => {
+      if (result.matches) {
+        this.isSmallScreen = true;
+      }
+    });
+    breakpointObserver.observe([Breakpoints.Tablet]).subscribe((result) => {
+      if (result.matches) {
+        this.isSmallScreen = false;
+      }
+    });
+  }
+
+  isSmallScreen: boolean = false;
 
   ngOnInit() {
     this.achievementService.showcased.subscribe(this.scrollToAchievement);
@@ -20,7 +37,7 @@ export class AchievementTableComponent implements OnInit, OnDestroy {
     this.achievementService.showcased.unsubscribe();
   }
 
-  displayedColumns: string[] = [
+  fullTableDisplay: string[] = [
     'achievement-toggle',
     'achievement',
     'description',
@@ -28,6 +45,8 @@ export class AchievementTableComponent implements OnInit, OnDestroy {
     'category',
     'points',
   ];
+
+  tinyTableDisplay: string[] = ['achievement'];
 
   dataSource = new MatTableDataSource(ACHIEVEMENTS);
 
