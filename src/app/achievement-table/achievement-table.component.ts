@@ -20,11 +20,13 @@ export class AchievementTableComponent implements OnInit, OnDestroy {
         this.isSmallScreen = true;
       }
     });
-    breakpointObserver.observe([Breakpoints.Tablet]).subscribe((result) => {
-      if (result.matches) {
-        this.isSmallScreen = false;
-      }
-    });
+    breakpointObserver
+      .observe([Breakpoints.Tablet, Breakpoints.Web])
+      .subscribe((result) => {
+        if (result.matches) {
+          this.isSmallScreen = false;
+        }
+      });
   }
 
   isSmallScreen: boolean = false;
