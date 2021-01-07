@@ -1,0 +1,49 @@
+@use "sass:map";
+@use "../../styles/palettes";
+
+.achievements-table {
+  width: 100%;
+  margin-bottom: 1em;
+
+  .col0 {
+    width: 1em;
+  }
+  .col1 {
+    width: 10em;
+  }
+  .col2 {
+    width: auto;
+  }
+  .col3 {
+    width: 4em;
+  }
+  .col4 {
+    width: 6em;
+  }
+  .col5 {
+    width: 6em;
+  }
+
+  .showcased {
+    background-color: map.get(palettes.$simsation-primary, 50);
+
+    td {
+      font-weight: bold;
+      color: black;
+    }
+  }
+
+  .mat-header-cell {
+    background-color: #000;
+  }
+
+  .mat-header-cell,
+  .mat-cell {
+    font-size: 1em;
+    padding: 1em 1em 1em 1em;
+  }
+
+  .mat-header-cell {
+    font-weight: bold;
+  }
+}

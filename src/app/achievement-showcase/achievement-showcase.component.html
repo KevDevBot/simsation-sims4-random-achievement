@@ -1,0 +1,43 @@
+<section class="achievement-showcase mat-elevation-z9">
+  <mat-accordion>
+    <mat-expansion-panel class="mat-elevation-z0" [expanded]="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <h2>{{ achievementService.showcased.value?.name }}</h2>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <section>
+        <h3>
+          {{ achievementService.showcased.value?.description }}
+        </h3>
+        <section>
+          <table>
+            <thead>
+              <td>Pack</td>
+              <td>Category</td>
+              <td>Points</td>
+            </thead>
+            <tr>
+              <td>
+                {{ achievementService.showcased.value?.pack }}
+              </td>
+              <td>{{ achievementService.showcased.value?.category }}</td>
+              <td>
+                {{ achievementService.showcased.value?.points }}
+              </td>
+            </tr>
+          </table>
+        </section>
+      </section>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <button
+    mat-mini-fab
+    (click)="randomize()"
+    color="primary"
+    aria-label="select at random button"
+  >
+    <mat-icon>casino</mat-icon>
+  </button>
+</section>

@@ -1,0 +1,23 @@
+.app {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  max-width: 60em;
+  padding: 1em;
+  margin: auto;
+}
+
+.logo-container {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+  padding: 0;
+}
+.logo {
+  width: 30em;
+  height: 3em;
+  margin: 0;
+}

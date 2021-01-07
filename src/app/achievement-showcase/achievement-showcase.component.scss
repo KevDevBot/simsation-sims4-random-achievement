@@ -1,0 +1,45 @@
+@use "sass:map";
+@use "../../styles/palettes";
+
+.achievement-showcase {
+  box-sizing: border-box;
+  position: sticky;
+  width: 100%;
+  top: 0em;
+  padding: 0.25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 100;
+
+  background-color: darken(map.get(palettes.$simsation-primary, 400), 20%);
+
+  h2 {
+    margin: 0;
+  }
+
+  table {
+    thead {
+      font-weight: bold;
+    }
+    tr {
+      font-weight: lighter;
+    }
+    td {
+      width: 10em;
+    }
+  }
+
+  .mat-accordion {
+    width: 100%;
+    background-color: inherit;
+    .mat-expansion-panel {
+      background-color: inherit;
+    }
+  }
+
+  button {
+    margin-left: 0.25em;
+    margin-bottom: 0.25em;
+  }
+}
