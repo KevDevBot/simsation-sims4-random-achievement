@@ -241,7 +241,7 @@ export const ACHIEVEMENTS: AchievementData[] = [
     points: '0',
     pack: 'Inactive Base Game',
     category: 'Inactive or Removed',
-    enabled: false,
+    enabled: true,
   },
   {
     name: 'At Your Service',
@@ -249,7 +249,7 @@ export const ACHIEVEMENTS: AchievementData[] = [
     points: '0',
     pack: 'Inactive Base Game',
     category: 'Inactive or Removed',
-    enabled: false,
+    enabled: true,
   },
   {
     name: 'Can Reproduce',
@@ -257,7 +257,7 @@ export const ACHIEVEMENTS: AchievementData[] = [
     points: '0',
     pack: 'Removed',
     category: 'Inactive or Removed',
-    enabled: false,
+    enabled: true,
   },
   {
     name: 'Flower Power',
@@ -265,7 +265,7 @@ export const ACHIEVEMENTS: AchievementData[] = [
     points: '0',
     pack: 'Inactive Base Game',
     category: 'Inactive or Removed',
-    enabled: false,
+    enabled: true,
   },
   {
     name: 'Horticulture Shock',
@@ -273,7 +273,7 @@ export const ACHIEVEMENTS: AchievementData[] = [
     points: '0',
     pack: 'Removed',
     category: 'Inactive or Removed',
-    enabled: false,
+    enabled: true,
   },
   {
     name: 'Jet-Setter',
@@ -281,7 +281,7 @@ export const ACHIEVEMENTS: AchievementData[] = [
     points: '0',
     pack: 'Inactive Base Game',
     category: 'Inactive or Removed',
-    enabled: false,
+    enabled: true,
   },
   {
     name: 'KamaSimtra',
@@ -289,7 +289,7 @@ export const ACHIEVEMENTS: AchievementData[] = [
     points: '0',
     pack: 'Inactive Base Game',
     category: 'Inactive or Removed',
-    enabled: false,
+    enabled: true,
   },
   {
     name: 'Old Lace',
@@ -297,7 +297,7 @@ export const ACHIEVEMENTS: AchievementData[] = [
     points: '0',
     pack: 'Removed',
     category: 'Inactive or Removed',
-    enabled: false,
+    enabled: true,
   },
   {
     name: 'Panhandler',
@@ -306,7 +306,7 @@ export const ACHIEVEMENTS: AchievementData[] = [
     points: '0',
     pack: 'Inactive Base Game',
     category: 'Inactive or Removed',
-    enabled: false,
+    enabled: true,
   },
   {
     name: 'Special Guest',
@@ -314,7 +314,7 @@ export const ACHIEVEMENTS: AchievementData[] = [
     points: '0',
     pack: 'Inactive Base Game',
     category: 'Inactive or Removed',
-    enabled: false,
+    enabled: true,
   },
   {
     name: 'Knock, Knock...',
