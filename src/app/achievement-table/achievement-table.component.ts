@@ -18,15 +18,10 @@ export class AchievementTableComponent implements OnInit, OnDestroy {
     breakpointObserver.observe([Breakpoints.Handset]).subscribe((result) => {
       if (result.matches) {
         this.isSmallScreen = true;
+      } else {
+        this.isSmallScreen = false;
       }
     });
-    breakpointObserver
-      .observe([Breakpoints.Tablet, Breakpoints.Web])
-      .subscribe((result) => {
-        if (result.matches) {
-          this.isSmallScreen = false;
-        }
-      });
   }
 
   isSmallScreen: boolean = false;
@@ -40,12 +35,12 @@ export class AchievementTableComponent implements OnInit, OnDestroy {
   }
 
   fullTableDisplay: string[] = [
-    'achievement-toggle',
     'achievement',
     'description',
     'pack',
     'category',
     'points',
+    'toggle',
   ];
 
   tinyTableDisplay: string[] = ['achievement'];

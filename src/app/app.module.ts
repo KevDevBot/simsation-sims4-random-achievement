@@ -11,7 +11,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSortModule } from '@angular/material/sort';
 import { AchievementTableComponent } from './achievement-table/achievement-table.component';
 import { AchievementShowcaseComponent } from './achievement-showcase/achievement-showcase.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +27,6 @@ import { AchievementShowcaseComponent } from './achievement-showcase/achievement
     MatExpansionModule,
     MatSortModule,
   ],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

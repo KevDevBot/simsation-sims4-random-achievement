@@ -5,23 +5,23 @@
   width: 100%;
   margin-bottom: 1em;
 
-  .col0 {
-    width: 1em;
-  }
-  .col1 {
+  .col-name {
     width: 10em;
   }
-  .col2 {
+  .col-desc {
     width: auto;
   }
-  .col3 {
-    width: 4em;
-  }
-  .col4 {
+  .col-pack {
     width: 6em;
   }
-  .col5 {
+  .col-cat {
     width: 6em;
+  }
+  .col-pt {
+    width: 2em;
+  }
+  .col-tgl {
+    width: 2em;
   }
 
   .showcased {
@@ -58,10 +58,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  .tiny-check {
-    margin: 1em 1em 1em 0;
-  }
 
   table {
     width: 100%;
